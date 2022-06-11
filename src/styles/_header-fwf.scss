@@ -1,0 +1,199 @@
+$li-padding: 20px;
+$breakpoint: 1200px;
+$container-width: 1200px;
+$burger-color: rgb(206, 206, 206);
+$cover-bg: rgba(0, 0, 0, 0.884);
+
+.--smart-header.--fwf {
+
+    .--burger-wrap,
+    .--close-mob {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        max-width: $container-width;
+        margin: auto;
+        position: relative;
+    }
+
+    li {
+        padding: $li-padding;
+    }
+
+    .--mob {
+        flex: 1 0 auto;
+        display: flex;
+    }
+
+    .--main-navs {
+        display: flex;
+        align-items: center;
+    }
+
+    .--add-navs {
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .--dropdown-ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: rgb(255, 255, 255);
+        border: 1px solid rgba(46, 46, 46, 0.068);
+        display: flex;
+    }
+
+    .--right {
+        left: auto;
+    }
+
+
+    .--hide-drops {
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+}
+
+
+@media screen and (max-width: $breakpoint) {
+    .--smart-header.--fwf {
+
+        .--logo-ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 0 auto;
+        }
+
+        .--close-mob {
+            display: block;
+
+            a {
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                width: 40px;
+                border-radius: 100%;
+                position: relative;
+
+                i {
+                    display: block;
+                    background: rgba(255, 255, 255, 0.5);
+                    height: 2px;
+                    width: 30px;
+                    position: absolute;
+                }
+
+                i:first-child {
+                    transform: rotateZ(40deg);
+                }
+
+                i:last-child {
+                    transform: rotateZ(-40deg);
+                }
+            }
+        }
+
+        .--burger-wrap {
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid $burger-color;
+                padding: 4px;
+                border-radius: 2px;
+                gap: 4px;
+                width: 30px;
+                height: 30px;
+                justify-content: center;
+
+                i {
+                    background: $burger-color;
+                    height: 2px;
+                    width: 100%;
+                    display: block;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .--mob {
+            background: $cover-bg;
+            height: 100%;
+            overflow: auto;
+            position: fixed;
+            width: 100%;
+            flex-direction: column;
+
+            a {
+                color: white;
+            }
+        }
+
+
+        .--main-navs {
+            flex-direction: column;
+        }
+
+        .--add-navs {
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 0;
+            flex-direction: column;
+        }
+
+        .--dropdown-ul {
+            position: static;
+            width: 100%;
+            background: rgb(0, 0, 0);
+            border: 1px solid rgba(190, 190, 190, 0.226);
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .--links-column {
+            width: 100%;
+
+            a {
+                width: 100%;
+                display: block;
+                padding: $li-padding;
+            }
+
+            li {
+                background: transparent;
+                transition: background .2s ease-in-out;
+                padding: 0;
+
+                &:hover {
+                    background: #333;
+                }
+            }
+        }
+
+        .--hide {
+            overflow: hidden;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    }
+}
