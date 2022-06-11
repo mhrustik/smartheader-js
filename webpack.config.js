@@ -15,12 +15,6 @@ module.exports = {
     entry: {
         "smart-header": './src/index.js'
     },
-    resolve: {
-        alias: {
-            '@': path.resolve(__dirname, 'src'),
-        }
-    },
-
     output: {
         filename: '[name].js',
         assetModuleFilename: "assets/[name]",
