@@ -1,4 +1,4 @@
-# SmartHeader-js
+# smart-header-js
 
 Adaptive header with two-level nesting dropdowns
 
@@ -7,17 +7,17 @@ Adaptive header with two-level nesting dropdowns
 ### Import ES modules
 
 ```
-npm i smartheader-js
+npm i smart-header-js
 ```
 
 ```
-import SmartHeader from 'smartheader-js'
+import SmartHeader from 'smart-header-js'
 ```
 
 Or: (More flexible way to connect individual components)
 
 ```
-import 'smartheader-js/src/styles/smart-header.scss'
+import 'smart-header-js/src/styles/smart-header.scss'
 import SmartHeader from 'smartheader-js/src/js/smart-header.js'
 ```
 

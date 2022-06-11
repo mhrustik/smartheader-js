@@ -1,5 +1,5 @@
 {
-  "name": "smartheader-js",
+  "name": "smart-header-js",
   "version": "1.0.0",
   "description": "Adaptive header",
   "main": "./src/index.js",
@@ -11,6 +11,10 @@
   "keywords": [],
   "author": "Михаил Хрусталев | https://t.me/m_hrust",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhrustik/smartheader-js"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.12",
     "@babel/preset-env": "^7.17.12",
