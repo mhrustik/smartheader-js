@@ -39,7 +39,7 @@ import files from a dist folder
                <li><a href="/"><img src="https://place-hold.it/200x90" alt=""></a></li>
                <li class="--burger-wrap"><a class="--burger-link" href=""><i></i> <i></i> <i></i></a></li>
            </ul>
-           <div class="--mob">
+           <div class="--mob --hide">
                <ul class="--main-navs">
                    <li class="--close-mob"><a href=""><i></i> <i></i></a></li>
                    <li><a href="">Home</a></li>
@@ -150,7 +150,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
             <li><a href="/"><img src="https://place-hold.it/200x90" alt=""></a></li>
             <li class="--burger-wrap"><a class="--burger-link" href=""><i></i> <i></i> <i></i></a></li
         </ul>
-        <div class="--mob">
+        <div class="--mob --hide">
             <ul class="--main-navs">
                 <li class="--close-mob"><a href=""><i></i> <i></i></a></li>
                 <li><a href="">Home</a></li>
